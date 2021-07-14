@@ -6,6 +6,8 @@
 
     <!-- Bootstrap v5 CDN Linking -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <!-- Bootsrap ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -22,7 +24,7 @@
     <!-- ---------------------- -->
     <!-- NAVIGATION BAR -->
     <!-- ---------------------- -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark border-bottom border-warning border-4">
         <div class="container">
             <div class="col-lg-3">
                 <a href="index.html" class="navbar-brand">
@@ -58,94 +60,105 @@
     </nav>
 
     <!-- ---------------------- -->
-    <!-- CARDS -->
+    <!-- INTRO -->
     <!-- ---------------------- -->
-    <section class="p-5">
-        <div class="container">
-            <div class="row  g-4">
-                <div class="col-md-4">
-                    <h3>Quick Links</h3>
-                    <div class="list-group list-group-flush">
-                        <a href="contact_tracing_map.html" class="list-group-item list-group-item-action">Contact Tracing Map</a>
-                        <a href="contact_tracing_map.html" class="list-group-item list-group-item-action">Smartphone Application Contact Tracing Map</a>
-                        <a href="automated_alerts.html" class="list-group-item list-group-item-action">Automated Alerts</a>
-                        <a href="data_engine.html" class="list-group-item list-group-item-action">Data Engine</a>
-                        <a href="dashboards.html" class="list-group-item list-group-item-action">Other Dashboards</a>
-
-                        <a href="https://covid19nearme.com.au/" class="list-group-item list-group-item-action">COVID-19 Near Me</a>
-                        <a href="https://www.covid19data.com.au/" class="list-group-item list-group-item-action">COVID-19 Data</a>
-                        <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/coronavirus-covid-19-case-numbers-and-statistics" class="list-group-item list-group-item-action">Department of Health</a>
-                        <a href="https://www.health.gov.au/resources/apps-and-tools/covidsafe-app" class="list-group-item list-group-item-action">COVIDSafe app</a>
-
-                      </div>
+    <section>
+        <div class="container-fluid p-0 ">
+            <div class="row align-items-center g-5">
+                <div class="col-6">
+                    <img src="Assets/Code_Stock_Photo(From Pexels).jpg" class="img-fluid m-3 rounded-3" alt="...">
                 </div>
-
-                <div class="col-md">
-                    <div class="container">
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-
-                            <div class="col-md-6 col-sm-12">
-                                    <a href="contact_tracing_map.html" class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="Assets/Contact Tracing.png" class="card-img-top" alt="...">
-                                        </div>
-                                        <div class="card-body">
-                                        <h5 class="card-title">Contact Tracing Map</h5>
-                                        <p class="card-text">This Web App gathers Exposure Site information from multiple State Government sites and presents the locations on a map.</p>
-                                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                                        </div>
-                                    </a>
-                            </div>
-
-                            <div class="col-md-6 col-sm-12">
-                                <a href="contact_tracing_map.html" class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
-                                    <div class="ratio ratio-16x9">
-                                      <img src="Assets/Automated ALert.png" class="card-img-top" alt="...">
-                                    </div>
-                                    <div class="card-body">
-                                      <h5 class="card-title">Automated Alerts</h5>
-                                      <p class="card-text">Automated Alerts supports daily COVID-19 situation updates for your specific locations of interest. Reports are sent by email. Public data from across Australia's various Departments of Health are utilised.</p>
-                                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                                    </div>
-                                </a>
-                            </div>
-      
-                            <div class="col-md-6 col-sm-12">
-                                <a href="contact_tracing_map.html" class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
-                                    <div class="ratio ratio-16x9">
-                                        <img src="Assets/Dashboards.png" class="card-img-top" alt="...">
-                                    </div>
-                                    <div class="card-body">
-                                      <h5 class="card-title">Other Dashboards</h5>
-                                      <p class="card-text">Find other useful dashboards visualising COVID-19 Data, from National Summary Graphs to Cases by day released by governments.</p>
-                                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                                    </div>
-                                </a>
-                            </div>
-     
-                            <div class="col-md-6 col-sm-12">
-                                <a href="contact_tracing_map.html" class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
-                                    <div class="ratio ratio-16x9">
-                                        <img src="Assets/Code_Stock_Photo(From Pexels).jpg" class="card-img-top" alt="...">
-                                    </div>
-                                    <div class="card-body">
-                                      <h5 class="card-title">Data Engine</h5>
-                                      <p class="card-text">The CRISPER Data Engine is a resource supporting the Automatic Alerts and the Dashboards. The Data Engine provides access to many data sources collected into one place..</p>
-                                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
+                <div class="col-6">
+                    <h4>
+                        Welcome to CRISPER's Data Engine
+                    </h4>
+                    <p>
+                        Powering our Interactive Graphic Dashboards and Automated Alerts
+                    </p>
                 </div>
                 
             </div>
         </div>
     </section>
 
+    <section  class="p-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
 
-    <footer class="p-5 bg-dark text-white">
+                <div class="col-md">
+                        <a href="https://data.crisper.net.au/schema" class="card h-100 my-1 text-decoration-none border-0 bg-dark text-white" style="width: 100%;">
+                            <div class="card-body text-center">
+                                <span class="fa-stack fa-3x m-4">
+                                    <i class="fa fa-square fa-stack-2x text-warning"></i>
+                                    <i class="fas fa-code fa-stack-1x text-dark"></i>
+                                </span>
+                                <h5 class="card-title">JSON Schema</h5>
+                            </div>
+                        </a>
+                </div>
+
+                <div class="col-md">
+                    <a href="https://data.crisper.net.au/tables" class="card h-100 my-1 text-decoration-none border-0 bg-dark text-white " style="width: 100%;">
+                        <div class="card-body text-center">
+                            <span class="fa-stack fa-3x m-4">
+                                <i class="fa fa-square fa-stack-2x text-warning"></i>
+                                <i class="fas fa-table fa-stack-1x text-dark"></i>
+                            </span>
+                            <h5 class="card-title">Tables</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md">
+                    <a href="https://data.crisper.net.au/status" class="card h-100 my-1 text-decoration-none border-0 bg-dark text-white"  style="width: 100%;">
+                        <div class="card-body text-center">
+                            <span class="fa-stack fa-3x m-4">
+                                <i class="fa fa-square fa-stack-2x text-warning"></i>
+                                <i class="far fa-question-circle fa-stack-1x text-dark"></i>
+                            </span>
+                            <h5 class="card-title">Status</h5>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr class="col-1 mx-auto text-warning border border-3 border-warning">
+
+    <section  class="p-5 ">
+        <div class="container">
+
+            <h3 class="py-3">
+                Privacy
+            </h3>
+            <p>The CRISPER Data Engine can utilise both public data and private data provided by jurisdictional authorities. 
+                All private data is managed on secure servers that utilise a new differential privacy capability, RelM implemented as open source by the Software Innovation Institute. 
+                Private data is released publicly according to a mathematically rigorous Privacy Budget formulation. Such data is then accessed for use in the CRISPER Dashboards and the CRISPER Alerts through the CRISPER Data Engine.</p>
+        </div>
+    </section>
+
+    <hr class="col-1 mx-auto text-warning border border-3 border-warning">
+    
+    <section  class="p-5 ">
+        <div class="container text-end">
+
+            <h3 class="py-3">
+                Usage & Sources
+            </h3>
+            <p>The data used by the Alerts Engine is collected daily from different government sources. It is only as up-to-date and as accurate as the agencies have made available and is dependent on their updates.</p>
+            <ul class="list-unstyled">
+                <li><a href="table/nsw_postcode_cases"> nsw_postcode_cases</a>
+                    - <a href="https://data.nsw.gov.au/data/dataset/covid-19-cases-by-location">https://data.nsw.gov.au/data/dataset/covid-19-cases-by-location</a></li>
+                    <li><a href="table/vic_active_cases_postcode">
+                        vic_active_cases_postcode</a>
+                        - <a href="https://www.dhhs.vic.gov.au/victorian-coronavirus-covid-19-data">https://www.dhhs.vic.gov.au/victorian-coronavirus-covid-19-data</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="p-5 bg-dark text-white border-top border-warning border-4">
 
         <!-- ---------------------------- -->
         <!-- Footer Content -->
@@ -201,7 +214,7 @@
                                 +61 XXX XXXX
                             </li>
                             <li>
-                                insert.email@email.com
+                                support@crisper.net.au
                             </li>
                             <br>
                             <li>
@@ -267,7 +280,7 @@
             </div>
             <div class="modal-body">
 
-                <form action="mailto:email@email.com" method="get" enctype="text/plain">
+                <form action="mailto:support@crisper.net.au" method="get" enctype="text/plain">
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                         <label for="floatingInput">Email address</label>
@@ -289,5 +302,7 @@
 
     <!-- Bootstrap v5 JavaScript Components CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/f58839dfaf.js" crossorigin="anonymous"></script>
 </body>
 </html>
