@@ -2,7 +2,7 @@
 #
 # Generic Makefile
 #
-# Time-stamp: <Monday 2021-07-05 16:17:29 AEST Graham Williams>
+# Time-stamp: <2021-07-15 15:14:47 >
 #
 # Copyright (c) Graham.Williams@togaware.com
 #
@@ -18,6 +18,8 @@
 APP=myapp
 VER=0.0.1
 DATE=$(shell date +%Y-%m-%d)
+DEST=/var/www/wsgi/templates/
+HTML=index.html automated_alerts.html
 
 ########################################################################
 # Supported modules.
@@ -72,7 +74,7 @@ endif
 define HELP
 $(APP):
 
-  myinstall	Install the application
+  install	Install website to $(DEST)
 
 endef
 export HELP
@@ -80,5 +82,5 @@ export HELP
 help::
 	@echo "$$HELP"
 
-myinstall:
-	@echo "Instructions to install go here"
+install:
+	sudo install -m u=rw,g=r,o=r $(HTML) $(DEST)
