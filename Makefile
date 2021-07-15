@@ -2,7 +2,7 @@
 #
 # Generic Makefile
 #
-# Time-stamp: <2021-07-15 15:14:47 >
+# Time-stamp: <2021-07-16 08:57:48 >
 #
 # Copyright (c) Graham.Williams@togaware.com
 #
@@ -18,8 +18,9 @@
 APP=myapp
 VER=0.0.1
 DATE=$(shell date +%Y-%m-%d)
-DEST=/var/www/wsgi/templates/
-HTML=index.html automated_alerts.html
+DEST=/var/www/wsgi/templates
+HTML=index.html automated_alerts.html dashboards.html data_engine.html
+CSS=style.css
 
 ########################################################################
 # Supported modules.
@@ -83,4 +84,7 @@ help::
 	@echo "$$HELP"
 
 install:
-	sudo install -m u=rw,g=r,o=r $(HTML) $(DEST)
+	sudo install -m u=rw,g=r,o=r $(HTML) $(CSS) $(DEST)
+	sudo mkdir -p $(DEST)/Assets
+	sudo rsync -avzh Assets/ $(DEST)/Assets/
+	sudo chmod -R a+rX $(DEST)/Assets
