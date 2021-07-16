@@ -2,7 +2,7 @@
 #
 # Generic Makefile
 #
-# Time-stamp: <2021-07-16 08:57:48 >
+# Time-stamp: <2021-07-16 14:31:47 >
 #
 # Copyright (c) Graham.Williams@togaware.com
 #
@@ -18,8 +18,8 @@
 APP=myapp
 VER=0.0.1
 DATE=$(shell date +%Y-%m-%d)
-DEST=/var/www/wsgi/templates
-HTML=index.html automated_alerts.html dashboards.html data_engine.html
+DEST=/var/www/wsgi/static
+HTML=index.html automated_alerts.html dashboards.html data_engine.html contact_tracing_map.html
 CSS=style.css
 
 ########################################################################
