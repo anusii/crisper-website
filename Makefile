@@ -2,7 +2,7 @@
 #
 # Generic Makefile
 #
-# Time-stamp: <2021-07-16 14:31:47 >
+# Time-stamp: <Friday 2021-07-16 15:35:51 AEST Graham Williams>
 #
 # Copyright (c) Graham.Williams@togaware.com
 #
