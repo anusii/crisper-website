@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark border-bottom border-warning border-4">
         <div class="container">
             <div class="col-lg-3">
-                <a href="index.html" class="navbar-brand">
+                <a href="/" class="navbar-brand">
                     <img src="Assets/Logos/CRISPER_Text_White.svg" alt="CRISPER LOGO WHITE" srcset="" class="img-fluid">
                 </a>
             </div>
@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="https://experience.arcgis.com/experience/1606ae83c91e4dc68c95170e7f37e9e9" class="nav-link">Contact Tracing Map</a>
+                         <a href="contact_tracing_map.html" class="nav-link">Contact Tracing Map</a>
                     </li>                
                     <li class="nav-item">
                         <a href="automated_alerts.html" class="nav-link">Automated Alerts</a>
@@ -68,12 +68,30 @@
                 <div class="col-6">
                     <img src="Assets/covid_pexels-photo-3970332.jpeg" class="img-fluid m-3 rounded-3" alt="...">
                 </div>
-                <div class="col-6">
+                <div class="col-4">
                     <h1>
-                        Welcome to CRISPER's Automated Alerts
-                    </h1>
-                    <p>
-                        Keeping you up-to-date with COVID-19 in your community
+                        Automated Alerts
+		  </h1>
+		  
+                    <p> Keeping you up-to-date with COVID-19 in your
+                        community, the Automated Alerts, developed by
+                        ANU's Software Innovation Institute, supports
+                        daily COVID-19 situation updates for your
+                        specific locations of interest.  Reports are
+                        sent by email or viewed online. Public data
+                        from across Australia's various Departments of
+                        Health are utilised through the Data
+		  Engine. </p>
+
+		  <p>Different types of automated alerts are
+                        supported, including COVID-19 cases (have
+                        there been any new COVID-19 cases reported in
+                        my postcodes of interest in the past 14 days),
+                        COVID-19 tests, and COVID-19 contact tracing
+                        locations (what are the current contact
+                        tracing locations in my postcodes of
+                        interest).
+            
                     </p>
                 </div>
                 
@@ -101,7 +119,15 @@
             <div class="row row-cols-1 row-cols-md-3 py-5">
 
                     <div class="col-md text-center my-3">
-                        <a class="btn btn-warning btn-lg col-8" href="https://crisper.net.au/user/register" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Register an email for sending alerts">
+                        <a class="btn btn-warning btn-lg col-8" href="/demo" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Explore alerts without having to register/login."> <b>
+                                Explore
+                            </b> 
+                        </a>
+                    </div>
+
+
+                    <div class="col-md text-center my-3">
+                        <a class="btn btn-warning btn-lg col-8" href="/user/register" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Register an email for sending alerts">
                             <b> 
                             Register 
                             </b>
@@ -110,17 +136,9 @@
 
 
                     <div class="col-md text-center my-3">
-                        <a class="btn btn-warning btn-lg col-8" href="https://crisper.net.au/alerts" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Manage the alerts you recieve"> <b>
+                        <a class="btn btn-warning btn-lg col-8" href="/alerts" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Manage the alerts you recieve"> <b>
                                 Manage
                             </b>
-                        </a>
-                    </div>
-
-
-                    <div class="col-md text-center my-3">
-                        <a class="btn btn-warning btn-lg col-8" href="https://crisper.net.au/demo" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Explore alerts without having to register/login."> <b>
-                                Demo
-                            </b> 
                         </a>
                     </div>
 
@@ -132,29 +150,6 @@
 
     <hr class="col-10 mx-auto text-warning border border-3 border-warning">
 
-    <section  class="p-5 ">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-4">
-                    <h3 class="py-3 text-center">
-                        About
-                    </h3>
-                </div>
-                <div class="col-md p-4">
-                    <p>Developed by the ANU's Software Innovation Institute the Automated Alerts supports daily COVID-19 situation updates for your specific locations of interest. 
-                        Reports are sent by email. Public data from across Australia's various Departments of Health are utilised.
-                        <br><br>
-                        Different types of automated alerts are supported, including COVID-19 cases (have there been any new COVID-19 cases reported in my postcodes of interest in the past 14 days), 
-                        COVID-19 tests, and COVID-19 contact tracing locations (what are the current contact tracing locations in my postcodes of interest).
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <hr class="col-8 mx-auto text-warning border border-3 border-warning">
-
-    
     <section  class="p-5 ">
         <div class="container">
             <div class="row align-items-center">
@@ -251,7 +246,7 @@
                     <small>
                         <ul class = "list-unstyled">
                             <li>
-                                +61 2 6125 3195
+                                
                             </li>
                             <li>
                                 support@crisper.net.au
