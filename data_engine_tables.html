@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tables</title>
+  <!-- Bootstrap -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- In-lining styles to avoid needing a separate .css file -->
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <div id="content">
+
+    <div style="margin: 20px">
+
+      <h1>Tables</h1>
+
+      <a href="/">Home Page</a>
+
+    </div>
+
+    <br>
+    <table style="margin-left:40px;margin-right:40px;" cellpadding="10">
+
+      <thead>
+        <td><b>Table</b></td>
+        <td><b>Columns (column name, data type)</b></td>
+      </thead>
+
+      {% for key in dict.keys() %}
+      <tr>
+        <!-- <td>{{key}}</td> -->
+        <td><a href="table/{{key}}"> {{key}}</a></td>
+        <td>{{dict[key]}}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+    </br>
+
+  </div>
+
+</body>
+
+</html>
