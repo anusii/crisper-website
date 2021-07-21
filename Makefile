@@ -2,7 +2,7 @@
 #
 # Generic Makefile
 #
-# Time-stamp: <2021-07-20 16:20:07 >
+# Time-stamp: <2021-07-21 10:36:46 >
 #
 # Copyright (c) Graham.Williams@togaware.com
 #
@@ -21,7 +21,8 @@ DATE=$(shell date +%Y-%m-%d)
 DEST=/var/www/wsgi/static
 CSS=style.css
 HTML=index.html automated_alerts.html dashboards.html data_engine.html \
-     contact_tracing_map.html mobile_contact_tracing_map.html
+     contact_tracing_map.html mobile_contact_tracing_map.html \
+     header.html footer.html
 
 ########################################################################
 # Supported modules.
@@ -76,7 +77,7 @@ endif
 define HELP
 $(APP):
 
-  install	Install website to $(DEST)
+  install	Install HTML into $(DEST)
 
 endef
 export HELP
