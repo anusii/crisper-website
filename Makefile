@@ -2,7 +2,7 @@
 #
 # Generic Makefile
 #
-# Time-stamp: <2021-07-22 17:31:05 >
+# Time-stamp: <Friday 2021-07-23 08:30:27 AEST Graham Williams>
 #
 # Copyright (c) Graham.Williams@togaware.com
 #
@@ -23,6 +23,7 @@ CSS=style.css
 HTML=index.html automated_alerts.html dashboards.html data_engine.html \
      contact_tracing_map.html mobile_contact_tracing_map.html \
      header.html footer.html about_us.html
+FAVICON=Assets/favicon.ico
 
 ########################################################################
 # Supported modules.
@@ -87,6 +88,7 @@ help::
 
 install:
 	sudo install -m u=rw,g=r,o=r $(HTML) $(CSS) $(DEST)
+	sudo install -m u=rw,g=r,o=r $(FAVICON) $(DEST)
 	sudo mkdir -p $(DEST)/Assets
 	sudo rsync -avzh Assets/ $(DEST)/Assets/
 	sudo chmod -R a+rX $(DEST)/Assets
