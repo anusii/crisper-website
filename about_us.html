@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap v5 CDN Linking -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <!-- Bootsrap ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>CRISPER: COVID-19 Real-time Information System for Preparedness and Epidemic Response</title>
+    <link rel="shortcut icon" type="image/jpg" href="Assets/Logos/SoftwareInnovationInstitute.png"/>
+
+    <!-- Header/Footer manager with jquery via https://stackoverflow.com/questions/18712338/make-header-and-footer-files-to-be-included-in-multiple-html-pages -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+        });
+    </script> 
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!-- ---------------------- -->
+    <!-- INTRO -->
+    <!-- ---------------------- -->
+    <section>
+        <div class="container">
+            <h2 class="py-3">About Us</h2>
+
+                    <div class="row align-items-center g-5 col">
+
+                        <div class="card mx-auto mb-2 border-light" style="width: 15rem;">
+                            <div class="d-flex align-items-center" style="height:200px;">
+                              <img class="card-img-top" src="Assets/Logos/ANU_Logo_Colour.png" alt="Card image cap">
+                            </div>
+                          <div class="card-body">
+                            <p class="card-text">John Doe, Jane Doe</p>
+                          </div>
+                        </div>
+                        
+                        <div class="card mx-auto mb-2 border-light" style="width: 15rem;">
+                            <div class="d-flex align-items-center" style="height:200px;">
+                              <img class="card-img-top" src="Assets/Logos/UQ_Logo_Colour.png" alt="Card image cap">
+                            </div>
+                          <div class="card-body">
+                            <p class="card-text">Colleen Lau</p>
+                          </div>
+                        </div>
+
+                        <div class="card mx-auto mb-2 border-light" style="width: 15rem;">
+                            <div class="d-flex align-items-center" style="height:200px;">
+                              <img class="card-img-top" src="Assets/Logos/SoftwareInnovationInstitute.png" alt="Card image cap">
+                            </div>
+                          <div class="card-body">
+                            <p class="card-text">Graham Williams, Jingjing Shi, Haotian Weng, Alex Sneddon, Mike Purcell, Kieran Ricardo, Jess Moore, Mark Burgess, Septian Razi and Zeyu Gao.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mx-auto mb-2 border-light" style="width: 15rem;">
+                            <div class="d-flex align-items-center" style="height:200px;">
+                              <img class="card-img-top" src="Assets/Logos/GRAPHC_Logo.png" alt="Card image cap">
+                            </div>
+                          <div class="card-body">
+                            <p class="card-text">John Doe, Jane Doe</p>
+                          </div>
+                        </div>
+                        
+
+                        <!-- <a href="https://www.apprise.org.au/" target="_blank" class="col-md">
+                            <img src="Assets/Logos/APPRISE_logo.png" alt="APPRISE Logo" class="img-fluid mx-auto">
+                        </a> -->
+                    </div>
+                </div>
+            
+
+
+
+        </div>
+    </section>
+
+
+
+    <div id="footer"></div>
+
+    <!-- Bootstrap v5 JavaScript Components CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/f58839dfaf.js" crossorigin="anonymous"></script>
+</body>
+</html>
