@@ -2,7 +2,7 @@
 #
 # Generic Makefile
 #
-# Time-stamp: <Friday 2021-07-23 08:30:27 AEST Graham Williams>
+# Time-stamp: <2021-07-26 15:14:26 >
 #
 # Copyright (c) Graham.Williams@togaware.com
 #
@@ -22,7 +22,7 @@ DEST=/var/www/wsgi/static
 CSS=style.css
 HTML=index.html automated_alerts.html dashboards.html data_engine.html \
      contact_tracing_map.html mobile_contact_tracing_map.html \
-     header.html footer.html about_us.html
+     header.html footer.html about_us.html data_sources.html
 FAVICON=Assets/favicon.ico
 
 ########################################################################
