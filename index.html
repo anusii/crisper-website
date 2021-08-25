@@ -14,8 +14,14 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>CRiSPER: COVID-19 Real-time Information System for Preparedness and Epidemic Response</title>
-    <link rel="shortcut icon" type="image/jpg" href="Assets/Logos/SoftwareInnovationInstitute.png"/>
+    <title>CRISPER: COVID-19 Real-time Information System for Preparedness and Epidemic Response</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="Assets/favicon_io/site.webmanifest">
+
+    <!-- <link rel="shortcut icon" type="image/jpg" href="Assets/Logos/SoftwareInnovationInstitute.png"/> -->
 
 
     <!-- Header/Footer manager with jquery via https://stackoverflow.com/questions/18712338/make-header-and-footer-files-to-be-included-in-multiple-html-pages -->
@@ -35,45 +41,111 @@
 <body>
     <div id="header"></div>
 
+    <!-- <section>
+        <div class="container ">
+            <div class="row align-items-center g-5">
+                <div class="col">
+                    <div class="overlay">
+                        <div class="overlay-content">Default overlay</div>
+                      </div>
+                    <div class="overlay has-bg-img rounded h-10rem my-2">
+                        <div class="overlay-content align-items-end
+        text-white">COVID-19 real-time information, reporting on cases,
+        tests, and exposure sites in Australia.</div>
+                        <img src="Assets/CORONA_FromPixabay_BW.jpg" class="bg-img" alt="...">
+
+                      </div>
+
+                    <h4 class = "lh-base">
+                        COVID-19 real-time information, reporting on
+                        cases, testing, and exposure sites in Australia. 
+                        </h4>
+                </div>
+                <div class="col-md-4 p-5">
+                    <h4 class = "lh-base">
+                        COVID-19 real-time information, reporting on cases,
+                        testing, and exposure sites in Australia. 
+                        </h4>
+
+		        </div>
+            </div>
+        </div>
+    </section> -->
+
 
     <!-- ---------------------- -->
     <!-- CARDS -->
     <!-- ---------------------- -->
-    <section class="p-5">
-        <div class="container">
-            <div class="row  g-4">
-                <div class="col-md-4">
-                    <h3>CRISPER</h3>
+    <section class="container py-5">
+
+            <div class="row">
+                <div class="col-md-4 pb-3 px-4">
                     <div class="list-group list-group-flush">
-                        <a href="contact_tracing_map.html" class="list-group-item list-group-item-action">Contact Tracing Map</a>
-                        <!-- a href="https://experience.arcgis.com/experience/1606ae83c91e4dc68c95170e7f37e9e9" class="list-group-item list-group-item-action">Smartphone Application Contact Tracing Map</a-->
-                        <a href="automated_alerts.html" class="list-group-item list-group-item-action">Automated Alerts</a>
-                        <a href="dashboards.html" class="list-group-item list-group-item-action">Other Dashboards</a>
-                        <a href="data_engine.html" class="list-group-item list-group-item-action">Data Engine</a>
-                        <a href="mobile_contact_tracing_map.html" class="list-group-item list-group-item-action">Mobile App</a>
-                        <br>
-                        <br>
-                    <h3>Resources</h3>
+                        <h5 class = "lh-base pb-4">
+                            COVID-19 real-time information, reporting
+                                on cases, testing, and exposure sites in Australia. 
+                        </h5>
+                        <h3>CRISPER</h3>
+                            <a href="exposure_sites.html" class="list-group-item list-group-item-action">Exposure Sites</a>
+                            <!-- a href="https://experience.arcgis.com/experience/1606ae83c91e4dc68c95170e7f37e9e9" class="list-group-item list-group-item-action">Smartphone Application Contact Tracing Map</a-->
+                            <a href="automated_alerts.html" class="list-group-item list-group-item-action">Automated Alerts</a>
+                            <a href="dashboards.html" class="list-group-item list-group-item-action">Other Dashboards</a>
+                            <a href="data_engine.html" class="list-group-item list-group-item-action">Data Engine</a>
+                            <a href="data_sources.html" class="list-group-item list-group-item-action">Data Sources</a>
+                            <a href="mobile_exposure_sites.html" class="list-group-item list-group-item-action">Mobile App</a>
+                            <a href="about_us.html" class = "list-group-item list-group-item-action">About Us</a>
+		      
+                        <br><br>
 
-                        <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/coronavirus-covid-19-case-numbers-and-statistics" class="list-group-item list-group-item-action" target="_blank">Department of Health</a>
-                        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" class="list-group-item list-group-item-action" target="_blank">World Health Organisation</a>
-                        <a></a> <!-- to get a final line -->
+                        <h3>Resources</h3>
 
-                      </div>
+                            <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/coronavirus-covid-19-case-numbers-and-statistics" class="list-group-item list-group-item-action" target="_blank">
+                                Australian Department of Health</a>
+                            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" class="list-group-item list-group-item-action" target="_blank">
+                                World Health Organization</a>
+                            <a></a> <!-- to get a final line -->
+
+                        <br><br>
+
+                        <h5> State and Territory Health Departments</h5>
+
+                            <a href="https://www.covid19.act.gov.au/" class="list-group-item list-group-item-action" target="_blank">
+                            Australian Capital Territory</a>
+                            <a href="https://www.nsw.gov.au/covid-19" class="list-group-item list-group-item-action" target="_blank">
+                            New South Wales</a>
+                            <a href="https://coronavirus.nt.gov.au/" class="list-group-item list-group-item-action" target="_blank">
+                            Northern Territory</a>
+                            <a href="https://www.covid19.qld.gov.au/" class="list-group-item list-group-item-action" target="_blank">
+                            Queensland</a>
+                            <a href="https://www.covid-19.sa.gov.au/" class="list-group-item list-group-item-action" target="_blank">
+                            South Australia</a>
+                            <a href="https://www.coronavirus.tas.gov.au/" class="list-group-item list-group-item-action" target="_blank">
+                            Tasmania</a>
+                            <a href="https://www.coronavirus.vic.gov.au/" class="list-group-item list-group-item-action" target="_blank">
+                            Victoria</a>
+                            <a href="https://www.wa.gov.au/government/covid-19-coronavirus" class="list-group-item list-group-item-action" target="_blank">
+                            Western Australia</a>                                               
+
+                            <a></a> <!-- to get a final line -->
+
+                    </div>
                 </div>
 
                 <div class="col-md">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row row-cols-1 row-cols-md-2 g-4">
 
-                            <div class="col-md-6 col-sm-12">
-                                    <a href="contact_tracing_map.html" class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
+                            <div class="col-md">
+                                    <a href="exposure_sites.html" class="card h-100 my-1 text-decoration-none text-dark hover-shadow" style="width: 100%;">
                                         <div class="ratio ratio-16x9">
                                             <img src="Assets/Contact Tracing_filter.png" class="card-img-top border-bottom border-warning border-4" alt="...">
                                         </div>
                                         <div class="card-body">
-                                        <h5 class="card-title lh-base">Map of Current COVID-19 Contact Tracing Alert Locations</h5>
-                                        <p class="card-text">This Web App gathers contact tracing alert locations from all state and 
+                                        <h5 class="card-title
+                                    lh-base">Current COVID-19
+                                    Exposure Sites</h5>
+                                        <p class="card-text">A Web App
+                                    that gathers COVID-19 exposure sites from all state and 
                                             territory health departments across Australia and presents the information in an interactive map.  
                                             Check if you or your family and loved ones have been to these locations.</p>
                                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
@@ -81,8 +153,8 @@
                                     </a>
                             </div>
 
-                            <div class="col-md-6 col-sm-12">
-                                <a href="automated_alerts.html" class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
+                            <div class="col-md">
+                                <a href="automated_alerts.html" class="card h-100 my-1 text-decoration-none text-dark hover-shadow" style="width: 100%;">
                                     <div class="ratio ratio-16x9">
                                       <img src="Assets/automated_alerts_filter.png" class="card-img-top border-bottom border-warning border-4" alt="...">
                                     </div>
@@ -96,8 +168,8 @@
                                 </a>
                             </div>
       
-                            <div class="col-md-6 col-sm-12">
-                                <a href="dashboards.html" class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
+                            <div class="col-md">
+                                <a href="dashboards.html" class="card h-100 my-1 text-decoration-none text-dark hover-shadow" style="width: 100%;">
                                     <div class="ratio ratio-16x9">
                                         <img src="Assets/Screenshots/NationalSummary_filter.png" class="card-img-top border-bottom border-warning border-4" alt="...">
                                     </div>
@@ -110,8 +182,8 @@
                                 </a>
                             </div>
      
-                            <div class="col-md-6 col-sm-12">
-                                <a href="data_engine.html" class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
+                            <div class="col-md">
+                                <a href="data_engine.html" class="card h-100 my-1 text-decoration-none text-dark hover-shadow" style="width: 100%;">
                                     <div class="ratio ratio-16x9">
                                         <img src="Assets/Code_Stock_Photo(From Pexels)_filter.jpg" class="card-img-top border-bottom border-warning border-4" alt="...">
                                     </div>
@@ -119,7 +191,7 @@
                                       <h5 class="card-title">Data Engine</h5>
                                       <p class="card-text">The CRISPER
                                 Data Engine is a resource supporting
-                                the Automatic Alerts and the
+                                the Automated Alerts and the
                                 Dashboards. The Data Engine provides
                                 access to many cleansed data sources collected into one place.</p>
                                       <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
@@ -132,7 +204,7 @@
                 </div>
                 
             </div>
-        </div>
+
     </section>
 
     <div id="footer"></div>

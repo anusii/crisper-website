@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="style.css">
 
     <title>CRISPER: COVID-19 Real-time Information System for Preparedness and Epidemic Response</title>
-    <link rel="shortcut icon" type="image/jpg" href="Assets/Logos/SoftwareInnovationInstitute.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="Assets/favicon_io/site.webmanifest">
     <!-- Header/Footer manager with jquery via https://stackoverflow.com/questions/18712338/make-header-and-footer-files-to-be-included-in-multiple-html-pages -->
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -39,12 +42,12 @@
     <!-- INTRO -->
     <!-- ---------------------- -->
     <section>
-        <div class="container-fluid p-0 ">
-            <div class="row align-items-center g-5">
-                <div class="col-6">
-                    <img src="Assets/covid_pexels-photo-3970332.jpeg" class="img-fluid m-3 rounded-3" alt="...">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <img src="Assets/covid_pexels-photo-3970332.jpeg" class="img-fluid m-md-3 mt-xs-2 rounded-3" alt="...">
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 p-5">
                     <h1>
                         Automated Alerts
 		  </h1>
@@ -95,7 +98,7 @@
             <div class="row row-cols-1 row-cols-md-3 py-5">
 
                     <div class="col-md text-center my-3">
-                        <a class="btn btn-warning btn-lg col-8" href="/demo" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Explore alerts without having to register/login."> <b>
+                        <a class="btn btn-warning btn-lg col-8" href="/alerts_explorer" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Explore alerts without having to register/login."> <b>
                                 Explore
                             </b> 
                         </a>

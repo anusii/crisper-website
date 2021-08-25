@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="style.css">
 
     <title>CRISPER: COVID-19 Real-time Information System for Preparedness and Epidemic Response</title>
-    <link rel="shortcut icon" type="image/jpg" href="Assets/Logos/SoftwareInnovationInstitute.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="Assets/favicon_io/site.webmanifest">
     <!-- Header/Footer manager with jquery via https://stackoverflow.com/questions/18712338/make-header-and-footer-files-to-be-included-in-multiple-html-pages -->
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -36,96 +39,12 @@
     <!-- ---------------------- -->
     <!-- CARDS -->
     <!-- ---------------------- -->
-    <section class="p-5">
-        <div class="container">
-            <div class="row  g-4">
-                <div class="col-md">
+    <section class="p-md-5 py-3">
                     <div class="container">
                         <div class="row row-cols-1 row-cols-md-2 g-4">
 
                             <div class="col-md-6 col-sm-12">
-
-                                    <div class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
-                                        <a href="https://experience.arcgis.com/experience/1606ae83c91e4dc68c95170e7f37e9e9" class = "text-decoration-none text-dark">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="Assets/Screenshots/ContactTracingMap_filter.png" class = "border-bottom border-warning border-4">
-                                        </div>
-                                        <div class="card-body">
-                                        <h4 class="card-title lh-base mb-3">CRISPER Contact Tracing Alerts Web App</h4>
-
-                                        <p class="card-text">
-                                            This Web App gathers contact tracing alert locations from all state and territory health departments across Australia and presents the information in an interactive map.
-
-
-                                            
-                                            <br>
-                                            To find the most recent, complete and authoritative data, please visit the appropriate health department website for your state or territory:
-                                        </a>
-                                            <ul>
-                                                <li>
-                                                    <a href="https://www.covid19.act.gov.au/news-articles/exposure-locations-in-the-act" type="_blank">
-                                                        Australian Capital Territory</a>
-                                                    
-                                                </li>
-                                                <li>
-                                                    <a href="https://data.nsw.gov.au/data/dataset/nsw-covid-19-case-locations/resource/f3a28eed-8c2a-437b-8ac1-2dab3cf760f9" type="_blank">
-                                                        New South Wales (Localities) </a>
-
-                                                    
-                                                </li>
-                                                <li>
-                                                    <a href="https://data.nsw.gov.au/data/dataset/nsw-covid-19-public-transport-routes/resource/954de47e-959d-495f-a85e-23fe66aea395" type="_blank">
-                                                        New South Wales (Transport) </a>
-                                                    
-                                                </li>
-                                                <li>
-                                                    <a href="https://coronavirus.nt.gov.au/stay-safe/case-location-alerts-and-public-exposure-sites" type="_blank">
-                                                        Northern Territory</a>
-                                                    
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.qld.gov.au/health/conditions/health-alerts/coronavirus-covid-19/current-status/contact-tracing" type="_blank">
-                                                        Queensland</a>
-                                                    
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/conditions/infectious+diseases/covid-19/testing+and+tracing/contact+tracing/contact+tracing" type="_blank">
-                                                        South Australia</a>
-                                                    
-                                                </li>
-                                                <li>
-                                                    <a href="https://discover.data.vic.gov.au/dataset/all-victorian-sars-cov-2-covid-19-current-exposure-sites/resource/afb52611-6061-4a2b-9110-74c920bede77" type="_blank">
-                                                        Victoria</a>
-                                                    
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.healthywa.wa.gov.au/Articles/A_E/Coronavirus/Locations-visited-by-confirmed-cases" type="_blank">
-                                                        Western Australia </a>
-                                                    
-                                                </li>
-                                                <li>
-                                                    <!--TODO: Is this the correct link for tasmania? -->
-                                                    <a href="https://www.coronavirus.tas.gov.au/families-community/public-exposure-sites-in-tasmania" type="_blank">
-                                                        Tasmania</a> 
-                                                     
-                                                </li>
-                                            </ul>
-                                            
-
-                                            <a href="https://experience.arcgis.com/experience/1606ae83c91e4dc68c95170e7f37e9e9" class = "text-decoration-none text-dark">
-                                            <br>
-                                            <b>
-                                            NOTE:</b> There may be a lag between the time that information is announced by health departments and when it appears on the web app.  
-                                            Some locations may not be precise due to limited information on the address or for other reasons. </b>
-                                        </p>
-                                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                                        </div>
-                                    </div>
-                                    </a>
-                            </div>
-
-                            <div class="col-md-6 col-sm-12">
-                                <a href="https://graphc.maps.arcgis.com/apps/dashboards/465d9e0cd44247b488b8431a56691417" class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
+                                <a href="https://graphc.maps.arcgis.com/apps/dashboards/465d9e0cd44247b488b8431a56691417" class="card h-100 my-1 text-decoration-none text-dark hover-shadow" style="width: 100%;">
                                     <div class="ratio ratio-16x9">
                                         <img title="CRISPER National Summary Dashboard" src="Assets/Screenshots/NationalSummary_filter.png" class="w-100 h-100 border-bottom border-warning border-4" alt="CRISPER National Summary Dashboard" style="display: block; object-fit: cover; object-position: 50% 50%;">
                                     </div>
@@ -138,7 +57,7 @@
                             </div>
 
                             <div class="col-md-6 col-sm-12">
-                                <a href="https://graphc.maps.arcgis.com/apps/dashboards/74e69c2ab40f41c892a652e95373622c" class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
+                                <a href="https://graphc.maps.arcgis.com/apps/dashboards/74e69c2ab40f41c892a652e95373622c" class="card h-100 my-1 text-decoration-none text-dark hover-shadow" style="width: 100%;">
                                     <div class="ratio ratio-16x9">
                                         <img title="Interactive Mapping Cases By Postcode (NSW ony)" src="Assets/Screenshots/CasesByPostcode_filter.png" alt="Interactive Mapping Cases By Postcode (NSW ony)" class = "border-bottom border-warning border-4">
                                     </div>
@@ -162,7 +81,7 @@
                             </div>
       
                             <div class="col-md-6 col-sm-12">
-                                <a href="https://graphc.maps.arcgis.com/apps/dashboards/743fab0c70204aefa812de611cb7999b" class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
+                                <a href="https://graphc.maps.arcgis.com/apps/dashboards/743fab0c70204aefa812de611cb7999b" class="card h-100 my-1 text-decoration-none text-dark hover-shadow" style="width: 100%;">
                                     <div class="ratio ratio-16x9">
                                         <img title="Interactive Mapping  Tests by Postcode (NSW only) &amp; Contact Tracing Locations" src="Assets/Screenshots/TestsByPostcode_filter.png" class="w-100 h-100 border-bottom border-warning border-4" alt="Interactive Mapping Tests by Postcode (NSW only) &amp; Contact Tracing Locations" style="display: block; object-fit: cover; object-position: 50% 50%;">
                                     </div>
@@ -188,7 +107,7 @@
                             </div>
 
                             <div class="col-md-6 col-sm-12">
-                                <a href="https://graphc.maps.arcgis.com/apps/dashboards/8a59e93e28a54298857e53d83dd158be" class="card h-100 my-1 text-decoration-none text-dark" style="width: 100%;">
+                                <a href="https://graphc.maps.arcgis.com/apps/dashboards/8a59e93e28a54298857e53d83dd158be" class="card h-100 my-1 text-decoration-none text-dark hover-shadow" style="width: 100%;">
                                     <div class="ratio ratio-16x9 ">
                                         <img src="Assets/Screenshots/NSWPHU_filter.png" class = "border-bottom border-warning border-4">
                                     </div>
@@ -202,10 +121,7 @@
 
                         </div>
                     </div>
-                </div>
-                
-            </div>
-        </div>
+
     </section>
 
 

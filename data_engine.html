@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="style.css">
 
     <title>CRISPER: COVID-19 Real-time Information System for Preparedness and Epidemic Response</title>
-    <link rel="shortcut icon" type="image/jpg" href="Assets/Logos/SoftwareInnovationInstitute.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="Assets/favicon_io/site.webmanifest">
 
     <!-- Header/Footer manager with jquery via https://stackoverflow.com/questions/18712338/make-header-and-footer-files-to-be-included-in-multiple-html-pages -->
     <script
@@ -40,19 +43,19 @@
     <!-- INTRO -->
     <!-- ---------------------- -->
     <section>
-        <div class="container-fluid p-0 ">
-            <div class="row align-items-center g-5">
-                <div class="col-6">
-                    <img src="Assets/Code_Stock_Photo(From Pexels).jpg" class="img-fluid m-3 rounded-3" alt="...">
+        <div class="container-fluid ">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <img src="Assets/Code_Stock_Photo(From Pexels).jpg" class="img-fluid m-md-3 mt-xs-2 rounded-3" alt="...">
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 px-5 pt-4 pb-0">
                     <h1>
                         Data Engine
-		  </h1>
-		  <br><br>
-		  <p>
+                        </h1>
+                        <br><br>
+                        <p>
 		  
-                        Powering the Contact Tracing Map, the
+                        Powering the Exposure Sites Map, the
                         Automated Alerts, and the Dashboards, the data
                         engine is the integration point for the
                         sources of health and geospatial data. It
@@ -62,25 +65,24 @@
                         implemented to parse the different data
                         formats.  </p>
 
-		  <p> The data engine is also available to independent
-                        developers, including government. It is hosted
-                        by National Computational Infrastructure at
-                        the Australian National University.  </p>
+                        <p> The data engine is also available to independent
+                            developers, including government. It is hosted
+                            by National Computational Infrastructure at
+                            the Australian National University.  </p>
 
-		</div>
-                
+		        </div>
             </div>
         </div>
     </section>
 
-    <section  class="p-5">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-5">
+    <section  class="container">
+        <div class="p-5">
+            <div class="row row-cols-1 row-cols-md-4 g-5">
 
                 <div class="col-md">
                     <a href="https://data.crisper.net.au/tables" class="card h-100 my-1 text-decoration-none  border border-0 border-dark text-dark " style="width: 100%;">
                         <div class="card-body text-center">
-                            <span class="fa-stack fa-3x m-4">
+                            <span class="fa-stack fa-3x m-4 hover-grow">
                                 <i class="fa fa-square fa-stack-2x text-dark"></i>
                                 <i class="fas fa-table fa-stack-1x text-warning"></i>
                             </span>
@@ -92,7 +94,7 @@
                 <div class="col-md">
                         <a href="https://data.crisper.net.au/schema" class="card h-100 my-1 text-decoration-none  border border-0 border-dark text-dark" style="width: 100%;">
                             <div class="card-body text-center">
-                                <span class="fa-stack fa-3x m-4">
+                                <span class="fa-stack fa-3x m-4 hover-grow">
                                     <i class="fa fa-square fa-stack-2x text-dark"></i>
                                     <i class="fas fa-code fa-stack-1x text-warning"></i>
                                 </span>
@@ -104,11 +106,23 @@
                 <div class="col-md">
                     <a href="https://data.crisper.net.au/status" class="card h-100 my-1 text-decoration-none  border border-0 border-dark text-dark"  style="width: 100%;">
                         <div class="card-body text-center">
-                            <span class="fa-stack fa-3x m-4">
-                                <i class="fa fa-square fa-stack-2x text-dark"></i>
-                                <i class="far fa-question-circle fa-stack-1x text-warning"></i>
+                            <span class="fa-stack fa-3x m-4 hover-grow">
+                                <i class="fa fa-square fa-stack-2x text-dark "></i>
+                                <i class="far fa-question-circle fa-stack-1x text-warning "></i>
                             </span>
                             <h3 class="card-title">Status</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md">
+                    <a href="data_sources.html" class="card h-100 my-1 text-decoration-none  border border-0 border-dark text-dark"  style="width: 100%;">
+                        <div class="card-body text-center">
+                            <span class="fa-stack fa-3x m-4 hover-grow">
+                                <i class="fa fa-square fa-stack-2x text-dark"></i>
+                                <i class="fas fa-search fa-stack-1x text-warning"></i>
+                            </span>
+                            <h3 class="card-title">Sources</h3>
                         </div>
                     </a>
                 </div>
@@ -120,8 +134,8 @@
     
     <hr class="col-8 mx-auto text-warning border border-3 border-warning">
 
-    <section  class="p-5 ">
-        <div class="container">
+    <section  class="container ">
+        <div class="p-4">
             <div class="row align-items-center">
                 <div class="col-4 ">
                     <h3 class="py-3 text-center">
@@ -144,10 +158,10 @@
     <hr class="col-8 mx-auto text-warning border border-3 border-warning">
 
 
-    <section  class="p-5 ">
-        <div class="container">
+    <section  class="container ">
+        <div class="p-4">
             <div class="row align-items-center">
-                <div class="col-4 ">
+                <div class="col-4">
                     <h3 class="py-3 text-center">
                         Usage & Sources
                     </h3>
@@ -157,7 +171,7 @@
                         The data used by the Data Engine is collected daily from different government sources. It is only as up-to-date and as accurate as the agencies have made available and is dependent on their updates.
                         The types of data collected include, for example, daily covid cases by postcode, daily covid testing numbers by postcode, and contact tracing locations.
                     </p>
-                    <ul class="list-unstyled">
+                    <!-- <ul class="list-unstyled">
                         <li>
                             <a href="table/nsw_postcode_cases"> nsw_postcode_cases</a> -
                             <a href="https://data.nsw.gov.au/data/dataset/covid-19-cases-by-location">https://data.nsw.gov.au/data/dataset/covid-19-cases-by-location</a>
@@ -166,7 +180,9 @@
                             <a href="table/vic_active_cases_postcode"> vic_active_cases_postcode</a> - 
                             <a href="https://www.dhhs.vic.gov.au/victorian-coronavirus-covid-19-data">https://www.dhhs.vic.gov.au/victorian-coronavirus-covid-19-data</a>
                         </li>
-                    </ul>
+                    </ul> -->
+
+                    <p>Find our complete sources <a href="data_sources.html">here</a> </p>
                 </div>
 
             </div>

@@ -20,9 +20,10 @@ VER=0.0.1
 DATE=$(shell date +%Y-%m-%d)
 DEST=/var/www/wsgi/static
 CSS=style.css
+FAVICON=Assets/favicon.ico
 HTML=index.html automated_alerts.html dashboards.html data_engine.html \
-     contact_tracing_map.html mobile_contact_tracing_map.html \
-     header.html footer.html
+     exposure_sites.html mobile_contact_tracing_map.html \
+     header.html footer.html about_us.html data_sources.html
 
 ########################################################################
 # Supported modules.
@@ -87,6 +88,7 @@ help::
 
 install:
 	sudo install -m u=rw,g=r,o=r $(HTML) $(CSS) $(DEST)
+	sudo install -m u=rw,g=r,o=r $(FAVICON) $(DEST)
 	sudo mkdir -p $(DEST)/Assets
 	sudo rsync -avzh Assets/ $(DEST)/Assets/
 	sudo chmod -R a+rX $(DEST)/Assets
