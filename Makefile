@@ -2,7 +2,7 @@
 #
 # Generic Makefile
 #
-# Time-stamp: <2021-07-26 15:14:26 >
+# Time-stamp: <2021-07-21 10:36:46 >
 #
 # Copyright (c) Graham.Williams@togaware.com
 #
@@ -20,10 +20,10 @@ VER=0.0.1
 DATE=$(shell date +%Y-%m-%d)
 DEST=/var/www/wsgi/static
 CSS=style.css
-HTML=index.html automated_alerts.html dashboards.html data_engine.html \
-     contact_tracing_map.html mobile_contact_tracing_map.html \
-     header.html footer.html about_us.html data_sources.html
 FAVICON=Assets/favicon.ico
+HTML=index.html automated_alerts.html dashboards.html data_engine.html \
+     exposure_sites.html mobile_contact_tracing_map.html \
+     header.html footer.html about_us.html data_sources.html
 
 ########################################################################
 # Supported modules.
@@ -78,7 +78,7 @@ endif
 define HELP
 $(APP):
 
-  install	Install website to $(DEST)
+  install	Install HTML into $(DEST)
 
 endef
 export HELP
