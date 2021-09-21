@@ -15,10 +15,17 @@
     <link rel="stylesheet" href="style.css">
 
     <title>CRISPER: COVID-19 Real-time Information System for Preparedness and Epidemic Response</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="Assets/favicon_io/site.webmanifest">
+
+     <!-- /Favicon stuff -->
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+     <link rel="manifest" href="/site.webmanifest?v=2">
+     <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#212529">
+     <link rel="shortcut icon" href="/favicon.ico?v=2">
+     <meta name="msapplication-TileColor" content="#ffc40d">
+     <meta name="theme-color" content="#ffc107">
+
     <!-- Header/Footer manager with jquery via https://stackoverflow.com/questions/18712338/make-header-and-footer-files-to-be-included-in-multiple-html-pages -->
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -31,6 +38,10 @@
         $("#footer").load("footer.html"); 
         });
     </script> 
+
+
+
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -49,7 +60,7 @@
 
 
                         <a  href="https://mobile.crisper.net.au/" type="button" class="btn btn-dark my-2">Fullscreen</a>
-                        <a  href="#" type="button" class="btn btn-dark my-2 mx-md-3">Add to Home Screen</a>
+                        <button type="button" class="add-to-home-screen btn btn-dark my-2 mx-md-3">Add to Home Screen</button>
      
                     
 
@@ -178,5 +189,14 @@
 
     <!-- Bootstrap v5 JavaScript Components CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+            })
+        }
+    </script> -->
 </body>
 </html>
