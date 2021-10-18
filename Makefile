@@ -2,7 +2,7 @@
 #
 # Generic Makefile
 #
-# Time-stamp: <2021-07-21 10:36:46 >
+# Time-stamp: <Tuesday 2021-10-19 08:15:03 AEDT >
 #
 # Copyright (c) Graham.Williams@togaware.com
 #
@@ -23,7 +23,8 @@ CSS=style.css
 FAVICON=Assets/favicon.ico
 HTML=index.html automated_alerts.html dashboards.html data_engine.html \
      exposure_sites.html mobile_contact_tracing_map.html \
-     header.html footer.html about_us.html data_sources.html
+     header.html footer.html about_us.html data_sources.html \
+     government_resources.html
 
 ########################################################################
 # Supported modules.
