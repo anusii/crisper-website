@@ -10,13 +10,14 @@ body{
 
 /* CUSTOM SHADOW HOVERS */
 .hover-shadow {
-    transition: box-shadow .3s;
+    transition: all .2s ease-in-out;
 }
 .hover-shadow:hover {
     box-shadow: 2px 2px 3px grey;
+    background-color: #edebe8;
 }
 
-/* CUSTOM SHADOW HOVERS */
+/* CUSTOM GROWTH HOVERS */
 .hover-grow {
     transition: all .2s ease-in-out;
 }
@@ -24,5 +25,15 @@ body{
     transform: scale(1.1);
 }
 
+
+/* CUSTOM TEXT COLOR HOVER */
+.hover-text-warning {
+    transition: all .4s ease-in-out;
+    text-decoration: none;
+    color: #fff5e8!important
+}
+.hover-text-warning:hover {
+    color: #f0ad4e!important;
+}
 
 
