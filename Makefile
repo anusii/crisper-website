@@ -2,7 +2,7 @@
 #
 # Generic Makefile
 #
-# Time-stamp: <Tuesday 2021-10-19 08:15:03 AEDT >
+# Time-stamp: <Thursday 2022-04-14 08:47:22 AEST >
 #
 # Copyright (c) Graham.Williams@togaware.com
 #
@@ -15,8 +15,8 @@
 #   Minor update
 #   Trivial update or bug fix
 
-APP=myapp
-VER=0.0.1
+APP=crisper-website
+VER=1.0.1
 DATE=$(shell date +%Y-%m-%d)
 DEST=/var/www/wsgi/static
 CSS=style.css
